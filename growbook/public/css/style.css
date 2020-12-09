@@ -1,0 +1,652 @@
+/* Estilos Gerais */ 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+ p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 20px ;
+}
+
+img {
+    display: block;
+}
+
+.btn {
+  border: 3px solid #000	;
+  padding: 10px 30px;
+  color: #000	;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .1em;
+}
+.btn:hover {
+  
+  color: #778899;
+  border-color: #778899;
+  
+}
+.subtitulo {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.subtitulo:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height:3px;
+    background: black;
+    margin: 8px  auto ;
+}
+
+#page {
+  display: none;
+}
+
+/* Header  */ 
+.menu {
+    background-color: #778899		;
+    height: 70px;
+    margin: 0 auto;
+    color: #fff;
+    display: flex;
+  }
+        .col {
+    flex: 1;
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  .content-start {
+    justify-content: start;
+  }
+  
+  .content-end {
+    justify-content: flex-end;
+  }
+  .avatar {
+
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    background: url(../img/roger.jpg); 
+    background-size: cover;
+    border-radius: 50%;
+
+  }
+   
+  .header_menu {
+    text-align: right;
+ justify-content: start;
+}
+.header_menu ul li{
+    display: inline-block;
+    margin-right: 60px;
+}
+.header_menu ul li a {
+color: #000;
+font-weight: bold;
+text-transform: uppercase;
+letter-spacing: .1em;
+font-size: 14px;
+line-height: 20px;
+}
+.logobook {
+    width: 100px;
+    height: 62px;  
+ 
+}
+
+/* Modal */ 
+
+ .btn_ler {
+  border: 3px solid #778899	;
+  padding: 10px 30px;
+  color: #778899	;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .1em;
+  }
+  .btn_ler:hover {
+   border-color: black;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+  background: #ddd;
+       
+    width: 40%;
+    position: relative;
+    transition: all 2s ease-in-out;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #778899;
+   font-size: 40px;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: #778899;
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+    line-height: 1.5;
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 20px ;
+    color: black;
+  }
+  /* dropdown */ 
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    padding-right: 50px;
+
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: #778899;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+      background: url(../img/roger.jpg);
+     background-size: cover;
+
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+/* Introdução */ 
+.introducao {
+    width: 100%;
+    height: 340px;
+    background: url("../img/livros.jpg") no-repeat center;
+    background-size: cover;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.introducao h1{
+    font-size: 48px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.quote-externo {
+    max-width: 320px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    color: white;
+
+}
+.quote-externo p{
+    font-size: 20px;
+}
+.quote-externo p:before, .quote-externo p:after{
+    content: "";
+    display: block;
+    width: 60px;
+    height:3px;
+    background: white;
+    margin: 14px auto 10px auto;
+
+}
+.quote-externo cite {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: .1em;
+}
+
+/* Livros */
+.livros {
+    padding: 60px 0;
+
+}
+
+.livros_lista li {
+    
+        text-align: center;
+}
+
+.livros_icone {
+    background: url(../img/about.jpg);
+    padding: 20px;
+    text-align: center;
+}
+
+
+.livros_icone:hover .btn_ler{
+    display: flex;
+    background-color: #fff;
+    color: #000000;
+    opacity: 1;
+   
+}
+
+
+.descricao {
+    display: none;
+}
+.btn_ler {
+    display: none;
+    border-radius: 20px;
+    border: 0.5px solid #fff;
+    color: #fff;
+    font-size: 15px;
+    padding: 13px;
+    margin-top: 20px;
+    margin-left: 55px;
+    font-weight: bold;
+    width: 150px;
+    justify-content: center; 
+    opacity: 1;
+}
+
+
+.livros_lista li h3{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-top: 20px;
+    
+}
+.livros_lista li h3:after{
+    content: "";
+    display: block;
+    width: 60px;
+    height:3px;
+    background: black;
+    margin: 2px auto;
+}
+.livros_lista li p {
+    padding: 10px 20px 20px 20px;
+}
+
+
+.livroImagem {
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.call {
+    padding-top: 40px;
+    text-align: center;
+    clear: both;
+}
+.call p {
+    margin-bottom: 20px;
+    color: #000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 20px ;
+}
+
+/* Testando */ 
+.resumo h2 {
+  font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+.resumo p {
+  padding: 10px 20px 20px 20px;
+  text-align: justify;
+  color: #000;
+}
+.maisLendo {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+.amigos{
+  width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   border:2px solid #000;
+      display: inline-block;
+  cursor: pointer;
+  
+}
+.status {
+  font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+  margin-top: 20px;
+margin-bottom: 20px;
+}
+.avaliacao {
+  margin-top: 20px;
+margin-bottom: 20px;
+font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #000;
+
+    
+}
+.comments-container{
+    width:100%;
+    max-width:1000px;
+    max-height: 1000px;
+    height: 100%;
+    margin:auto;
+    border-top: 2px solid #454545;
+}
+.comments-container    h1 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  letter-spacing: .1em;
+  color: black;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 20px;
+}
+   .profile-img {
+        width:50px;
+        height:50px;
+        border-radius:0.25rem;
+        object-fit:cover;
+      }
+    .one-comment{
+      display: flex;
+      margin-bottom:20px; }
+      .comment-content{
+        margin-left:10px;
+        padding-top:5px; }
+        h4 {
+          margin:0; 
+          color: #000;
+
+        }
+          span{
+            color: #000;
+margin-left: 10px;          }
+    
+          .comments-container      p {
+          margin: 0;
+          margin-top:10px;
+          color: #778899;
+        }
+     
+  .add-comment{
+    display:flex; }
+    .submit-comment{
+      margin-left:10px;
+      display:flex;
+      flex-direction: column;
+      flex-grow:1; }
+     #mensagem {
+        background:transparent;
+        border-bottom: 1px solid #778899;
+        font-size:15px;
+        color: #778899;
+        height: 80px;
+        transition: all .5s;
+            }
+            #comentarios {
+              margin-bottom:10px;
+            }
+      .button{
+        border: 3px solid #778899	;
+    padding: 10px 30px;
+    color: #778899	;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .1em;
+                    align-self:flex-end;
+          cursor:pointer;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          transition: all .5s;
+         }
+         .button:hover{
+           border-color: #000;
+           color: #000;
+         }
+/* Autores teste */ 
+.fundoAutor  {
+    width: 100%;
+  
+        text-align: center;
+        background:url(../img/about.jpg) no-repeat center;
+        background-size: cover;
+}
+
+.autores {
+    padding: 60px 0;
+}
+.autores .subtitulo {
+    color:black	;
+}
+
+.autores .subtitulo:after {
+    background: black	;
+}
+.autores_lista li {
+   
+    text-align: center;
+  
+}
+.autorImagem {
+    max-width:400px;
+    max-height:250px;
+     text-align: center;
+        border-radius: 50%;
+        margin-left: 20px;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        opacity: 1;
+}
+.cont {
+  position: relative;
+  width: 50%;
+}
+.publis {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.cont:hover .autorImagem{
+  opacity: 0.3;
+}
+.cont:hover .publis{
+  opacity: 1;
+}
+.publicacoes {
+  background-color: #fff;
+  color: #778899;
+  font-size: 16px;
+  padding: 16px 32px;
+  cursor: pointer;
+  text-align: center;
+}
+.text {
+  background-color: #778899;
+  color: white;
+  font-size: 16px;
+   font-weight: bold;
+  padding: 16px 32px;
+  text-transform: uppercase;
+   }
+
+.call {
+    padding-top: 40px;
+    text-align: center;
+    clear: both;
+}
+.call p {
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 20px ;
+}
+
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    background: #000;
+    color:#fff;
+    padding: 20px 0;
+}
+
+.footer h3{
+    font-size: 18px;
+    line-height: 25px;
+    color:#778899	;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: bold;
+}
+.footer h3:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #778899	;
+    margin: 6px 0 12px 0;
+
+}
+
+.footer_historia {
+    padding-right: 40px;
+}
+
+.footer_contato ul li {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer_redes ul li {
+    display: inline-block;
+margin-right: 10px;
+}
+
+.footer_redes ul li a {
+    border: 3px solid #778899	; 
+    display: block;
+    padding: 10px;
+    filter: grayscale(100%);
+
+}
+.footer_redes ul li a:hover{
+    border-color: #fff;
+}
+
+.copy {
+    width: 100%;
+    background: #778899	;
+    padding: 20px 0;
+}
+
+.creator {
+    text-align: center;
+}

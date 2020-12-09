@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GrowBook</title>
+  <link rel="stylesheet" href="./css/login.css">
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/grid.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+
+</head>
+
+<body>
+  <div class="containerLogin" id="pageLogin">
+    <div class="login">
+      <h1 class="titulo">GrowBook</h1>
+      <p id="paragraph">Insira seu e-mail e sua senha e clique no botão ENTRAR.</p>
+      <div class="form">
+        <label class="label-input">
+
+          <input type="text" id="email" class="dados" placeholder="E-mail">
+        </label>
+
+        <label class="label-input">
+
+          <input type="password" id="senha" class="dados" placeholder="Senha">
+        </label>
+        <button type="button" class="btn" id="btnLogin">Entrar</button>
+      </div>
+    </div>
+  </div>
+  <div id="page">
+    <header>
+      <nav>
+        <section class="menu">
+          <div class="col content-start"> <img src="./img/logobook.svg" alt="GrowBook" class="logobook">GrowBook</div>
+          <div class="col content-end">
+            <nav class="grid-12 header_menu">
+              <ul>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="livros.html">Livros</a></li>
+                <li><a href="autores.html">Autores</a></li>
+              </ul>
+            </nav>
+            <div class="dropdown">
+              <button class="avatar dropbtn">
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Meu perfil</a>
+                <a href="#">Livros preferidos</a>
+                <a href="#">Autores preferidos</a>
+                <a class="material-icons pointer">exit_to_app </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </nav>
+    </header>
+
+    </header>
+    <section class="introducao">
+      <div class="container">
+        <h1>GrowBook</h1>
+        <blockquote class="quote-externo">
+          <p>
+            A GrowBook é uma plataforma que reúne amantes da leitura e dos bons livros para uma
+            conversação com as mais honestas pessoas dos séculos passados e atuais.
+          </p>
+        </blockquote>
+      </div>
+    </section>
+    <section class="livros container" id="livros">
+      <h2 class="subtitulo">Livros recomendados</h2>
+      <ul class="livros_lista">
+        <li class="grid-1-3">
+          <div class="livros_icone">
+            <img src="./img/livro1.jpg" alt="Livro 1" class="livroImagem" />
+
+            <a class="btn_ler" href="#popup1">Leia mais</a>
+          </div>
+
+          <div id="popup1" class="overlay">
+            <div class="popup">
+              <h2>Quem tem medo de Javascript?</h2>
+              <a class="close" href="#">&times;</a>
+              <div class="content">
+                JavaScript é uma linguagem de programação interpretada estruturada,
+                de script em alto nível que assusta muitos.<br>
+                LLorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                Sed congue tristique varius. Vestibulum scelerisque finibus enim eu mollis.
+                Aenean a pretium lacus. Donec porta tristique blandit. In ac risus vitae elit<br>
+                posuere malesuada ac eu lacus. Phasellus accumsan mi enim, vel varius velit ultrices ac. <br>
+                Integer at feugiat odio, nec viverra eros. Curabitur luctus eu nulla vitae egestas.<br>
+                Nullam in nibh augue. Duis mauris mauris, efficitur sit amet leo id, varius semper magna.
+                <br> Sed cursus augue ut libero rhoncus, at congue nisi viverra.
+              </div>
+            </div>
+          </div>
+
+
+          <h3>Quem tem medo de Javascript?</h3>
+
+        </li>
+
+        <li class="grid-1-3">
+          <div class="livros_icone">
+            <img src="./img/livro2.jpg" alt="Livro2" class="livroImagem" />
+            <a class="btn_ler" href="#popup2">Leia mais</a>
+          </div>
+
+          <div id="popup2" class="overlay">
+            <div class="popup">
+              <h2>Javascript ES6: o inimigo agora é outro</h2>
+              <a class="close" href="#">&times;</a>
+              <div class="content">
+                ECMAScript é uma linguagem de programação, baseada em scripts,
+                que consegue ser ainda mais assustadora. <br>
+                LLorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                Sed congue tristique varius. Vestibulum scelerisque finibus enim eu mollis.
+                Aenean a pretium lacus. Donec porta tristique blandit. In ac risus vitae elit<br>
+                posuere malesuada ac eu lacus. Phasellus accumsan mi enim, vel varius velit ultrices ac. <br>
+                Integer at feugiat odio, nec viverra eros. Curabitur luctus eu nulla vitae egestas.<br>
+                Nullam in nibh augue. Duis mauris mauris, efficitur sit amet leo id, varius semper magna.
+                <br> Sed cursus augue ut libero rhoncus, at congue nisi viverra.
+
+              </div>
+            </div>
+          </div>
+
+
+          <h3>Javascript ES6: o inimigo agora é outro</h3>
+        </li>
+
+        <li class="grid-1-3">
+          <div class="livros_icone">
+            <img src="./img/livro3.jpg" alt="Livro 3" class="livroImagem">
+            <a class="btn_ler" href="#popup3">Leia mais</a>
+          </div>
+
+          <div id="popup3" class="overlay">
+            <div class="popup">
+              <h2>GrowDev: o início de um sonho</h2>
+              <a class="close" href="#">&times;</a>
+              <div class="content">
+                Fundada para ajudar a resolver um problema da mão de obra de TI
+                com o objetivo de <br>
+                LLorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                Sed congue tristique varius. Vestibulum scelerisque finibus enim eu mollis.
+                Aenean a pretium lacus. Donec porta tristique blandit. In ac risus vitae elit<br>
+                posuere malesuada ac eu lacus. Phasellus accumsan mi enim, vel varius velit ultrices ac. <br>
+                Integer at feugiat odio, nec viverra eros. Curabitur luctus eu nulla vitae egestas.<br>
+                Nullam in nibh augue. Duis mauris mauris, efficitur sit amet leo id, varius semper magna.
+                <br> Sed cursus augue ut libero rhoncus, at congue nisi viverra.
+              </div>
+            </div>
+          </div>
+
+
+          <h3>GrowDev: o início de um sonho</h3>
+        </li>
+      </ul>
+      <div class="call">
+        <p>clique aqui e veja mais recomendações</p>
+        <a href="livros.html" class="btn btn-preto">Recomendações </a>
+      </div>
+    </section>
+
+    <section class="autores fundoAutor" id="autores">
+      <div class="container">
+        <h2 class="subtitulo">Autores mais recomendados</h2>
+        <ul class="autores_lista ">
+          <li class="grid-1-3">
+            <div class="cont">
+              <img src="./img/roger.jpg" alt="Avatar" class="autorImagem">
+              <div class="publis">
+                <div class="text">Roger GrowDev</div>
+                <div class="publicacoes">Publicações</div>
+
+              </div>
+            </div>
+          </li>
+
+          <li class="grid-1-3">
+            <div class="cont">
+              <img src="./img/manoel.jpg" alt="Manoel" class="autorImagem" />
+              <div class="publis">
+                <div class="text">Manoel GrowDev</div>
+                <div class="publicacoes">Publicações</div>
+
+              </div>
+            </div>
+          </li>
+
+          <li class="grid-1-3">
+            <div class="cont">
+              <img src="./img/marcelo.jpg" alt="Marcelo" class="autorImagem" />
+              <div class="publis">
+                <div class="text"> Marcelo GrowDev</div>
+                <div class="publicacoes">Publicações</div>
+
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="call">
+        <p>Venha conhecer mais autores</p>
+        <a href="autores.html" class="btn btn-preto">Autores </a>
+
+    </section>
+    <section class="livros container" id="livros">
+      <h2 class="subtitulo">O que estou lendo?</h2>
+      <ul class="autores_lista ">
+        <li class="grid-1-3">
+          <img src="../public/img/livro1.jpg">
+        </li>
+
+        <li class="grid-1-3 resumo">
+          <h2> Quem tem medo de Javascript? </h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus
+            PageMaker including versions of Lorem Ipsum.</p>
+        </li>
+        <li class="grid-1-3">
+          <h2 class="maisLendo"> Quem mais está lendo?</h2>
+          <img src="./img/pessoa1.jpg" class="amigos" alt="Amigos">
+          <img src="./img/pessoa2.jpg" class="amigos" alt="Amigos">
+          <img src="./img/pessoa3.jpg" class="amigos" alt="Amigos">
+          <img src="./img/pessoa4.jpg" class="amigos" alt="Amigos">
+          <h2 class="status">Status de leitura</h2>
+          <progress max="100" value="98"></progress>
+          <h2 class="avaliacao">Gostou?</h2>
+          <h2>Deixe um comentário abaixo</h2>
+    </section>
+    <section class="container">
+
+
+      <div class="comments-container">
+        <h1>Comentários</h1>
+        <div id="comentarios"></div>
+
+        <div class="one-comment">
+          <img class="avatar" src="../public/img/livros.jpg">
+          <div class='comment-content'>
+            <h4>Alicia<span>1 semana atrás</span></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. </p>
+          </div>
+        </div>
+        <div class="one-comment">
+          <img class="avatar" src="../public/img/livroheader1.jpg">
+          <div class='comment-content'>
+            <h4>Carlos<span>2 meses atrás</span></h4>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+              laborum.</p>
+          </div>
+        </div>
+        <div class="add-comment">
+          <img class="avatar" src="../public/img/roger.jpg">
+          <div class="submit-comment">
+            <textarea type="text" placeholder="Adicione um comentário" id="mensagem"></textarea>
+            <div class="button" id="comentar">Comentar</div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="grid-4 footer_contato">
+            <h3>Contato</h3>
+            <ul>
+              <li>- 99 9999999</li>
+              <li>- contato@growbook.com</li>
+              <li>- Growdev - Novo Hamburgo/RS</li>
+            </ul>
+          </div>
+          <div class="grid-4 footer_redes">
+            <h3>Redes Socias</h3>
+            <ul>
+              <li><a href="http://facebook.com" target="_blank"><img src="./img/facebook.svg"> </a></li>
+              <li><a href="http://instagram.com" target="_blank"><img src="./img/instagram.svg"> </a></li>
+              <li><a href="http://twitter.com" target="_blank"><img src="./img/twitter.svg"> </a></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copy">
+        <div class="container">
+          <p class="grid-16 creator"> &#169 GrowBook 2020 - Lucas e Jéssica</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  
+
+
+
+  <script src="./bundle.js"></script>
+</body>
+
+</html>
